@@ -1,0 +1,15 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    image: ip4lookup-flask-api
+    volumes:
+      - /usr/share/GeoLite2-City_latest:/usr/share/GeoLite2-City_latest
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    image: ip4lookup-client
+    ports:
+      - "3000:80"

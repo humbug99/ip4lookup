@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.octet {
+  width: 3ch;
+  font-size: 20;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.octetSeparator {
+  font-size: 16;
+  font-weight: bold;
+  display: inline-block;
+  margin: 20px 10px 10px 10px;
+}
+
+.faButton {
+  color: gray;
+  /* the funky margin here is a hacky way to center the search button */
+  margin: 10px 100px 10px 10px;
+}
+
+.faButton:enabled {
+  color: green;
+}
+
+
+.faButton-clear {
+  margin: 10px 10px 10px 50px;
+}
+
+.resultBox {
+  white-space: pre-wrap;
+}
+
+.ip4-status {
+  font-style: italic;
+}
